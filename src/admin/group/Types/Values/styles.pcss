@@ -1,0 +1,51 @@
+.row,
+.heading {
+	& td {
+		padding: 0.5rem;
+	}
+
+	& td:last-child:not(.leftAlign) {
+		width: 4rem;
+		text-align: right;
+	}
+}
+
+.leftAlign select {
+	margin-right: 0.5rem;
+}
+
+.checkbox {
+	text-align: center;
+	width: 4rem;
+}
+
+.row {
+	& tr:first-child td {
+		border-top: 1px solid #e1e2e1;
+	}
+
+	&:first-child tr:first-child td {
+		border-top: 0;
+	}
+
+	& tr td#descriptionCheckboxContainer {
+		display: flex;
+		width: 100%;
+		margin-bottom: 0;
+
+		& input[type="checkbox"] {
+			margin-right: 0.5rem;
+		}
+	}
+
+	& input:not([type="checkbox"]),
+	& textarea {
+		min-height: 28px;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.addFullOption {
+	width: 100%;
+}

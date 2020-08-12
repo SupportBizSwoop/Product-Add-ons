@@ -1,0 +1,25 @@
+.magnet {
+	position: relative;
+	width: 30px;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+
+	&:before {
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		content: "";
+		z-index: 1;
+		cursor: move;
+	}
+
+	& span {
+		letter-spacing: 0;
+		font-size: 1.25rem;
+		line-height: 1;
+		transform: rotate(90deg) translateX(1px);
+		display: inline-block;
+	}
+}

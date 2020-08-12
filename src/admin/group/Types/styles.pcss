@@ -1,0 +1,91 @@
+.types {
+	background-color: #fafafa;
+	border: 1px solid #e5e5e5;
+}
+
+.row {
+	padding: 0.75rem;
+	border: 1px solid #e5e5e5;
+	margin: -1px;
+}
+
+.type {
+	background: #fafafa;
+}
+
+.heading {
+	display: flex;
+	flex-flow: wrap row;
+	font-size: 0.8rem;
+	align-items: center;
+
+	& .title {
+		position: relative;
+		display: block;
+		flex-grow: 1;
+		background: none;
+		appearance: none;
+		padding: 0;
+		border: none;
+		text-align: left;
+		font-weight: bold;
+		color: #0073aa;
+		margin-right: 0.5rem;
+		& span {
+			color: #aaa;
+			border-left: 1px solid #eee;
+			padding-left: 0.75rem;
+			margin-left: 0.75rem;
+			font-weight: normal;
+
+			& strong {
+				color: #111;
+				text-transform: uppercase;
+			}
+		}
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: "";
+			display: block;
+		}
+	}
+}
+
+.form {
+	margin-top: 0.75rem;
+}
+
+.label {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid #eee;
+	line-height: 1;
+	font-size: 0.8rem;
+
+	& label {
+		display: inline-block;
+		margin-bottom: 0.4rem;
+		margin-right: 0.4rem;
+	}
+
+	&.line label {
+		margin-bottom: 0;
+	}
+
+	& input {
+		vertical-align: bottom;
+	}
+}
+
+.descriptionCheckbox {
+    margin-top: 1rem;
+}
+
+.fullAddRow {
+	width: 100%;
+}

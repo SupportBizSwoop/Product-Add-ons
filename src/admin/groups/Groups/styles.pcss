@@ -1,0 +1,53 @@
+.list {
+	margin: 0;
+
+	& li {
+		margin: 1px;
+		float: left;
+		& a {
+			background-color: rgba(0, 0, 0, 0.05);
+			border-radius: 3px;
+			padding: 5px 10px;
+			display: inline-block;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+}
+
+.empty, .all {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.03);
+	border-radius: 3px;
+	padding: 5px 10px;
+	&.full {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+}
+
+.error {
+	color: red;
+	text-align: center;
+}
+
+.info {
+	text-align: right;
+}
+
+.priority {
+	text-align: center;
+}
+
+.actions {
+	float: right;
+	display: flex;
+
+	& .editButton {
+     	margin-right: 0.5rem;
+  }
+}
